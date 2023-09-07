@@ -3,7 +3,7 @@
 <%@page import="com.poscodx.guestbook.dao.GuestBookDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
-	List <GuestBookVo> list = new GuestBookDao().findAll();
+	List <GuestBookVo> list = (List<GuestBookVo>)request.getAttribute("list");
 %>
 <html>
 <head>
